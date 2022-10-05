@@ -18,7 +18,7 @@ PKG_MIRROR_HASH:=f8395374ee915d6b65bbb22e2bc4ddb7e8a98aec90e0df9b1702faab8baeac9
 PKG_MAINTAINER:=Jo-Philipp Wich <jo@mein.io>
 PKG_LICENSE:=ISC
 
-PKG_ABI_VERSION:=20220812
+PKG_ABI_VERSION:=$(call abi_version_str,$(PKG_SOURCE_DATE))
 
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/host-build.mk
